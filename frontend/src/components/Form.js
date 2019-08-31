@@ -1,4 +1,11 @@
+import React from 'react';
+
+
+
+
+
 class Form extends React.Component {
+
     constructor(props) {
         super(props);
         this.state = { value: '' };
@@ -22,6 +29,7 @@ class Form extends React.Component {
                 <label>
                     Name:
           <input type="text" value={this.state.value} onChange={this.handleChange} />
+
                 </label>
                 <input type="submit" value="Submit" />
             </form>
@@ -31,3 +39,5 @@ class Form extends React.Component {
 
 
 export default Form;
+
+// Pipe form to localhost/upload:8080

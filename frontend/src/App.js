@@ -1,12 +1,16 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import Form from './components/form';
+//import Form from './components/Form';
+import DragNDrop from './components/DragNDrop';
+import Dropzone from './components/dropzone';
 
 function App() {
   return (
     <div className="App">
-      <Form />
+      <div className="Card">
+        <Dropzone onFilesAdded={console.log}/>
+      </div>
+      <DragNDrop />
     </div>
   );
 }
