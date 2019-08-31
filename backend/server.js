@@ -8,7 +8,7 @@ app.get('/', (req, res) => {
     res.send('This is the index page');
 })
 
-app.post('/upload', function (req, res) {
+app.post('/upload', function(req, res) {
     var today = new Date();
     var dateStr = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
     extractAudio({
