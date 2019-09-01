@@ -11,5 +11,9 @@ function getMusicData(url) {
         method: 'POST'
     }, function(err, res, body) {
         console.log(body);
+        res.on('data', function(data) {
+            var musicDataJson = JSON.parse(data);
+        });
     });
+    return musicDataJson;
 }
