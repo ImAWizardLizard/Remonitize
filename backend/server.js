@@ -17,7 +17,9 @@ app.post('/upload', function(req, res) {
     });
 
     // getInfo
+    var musicDataJson = getMusicData(extractAudio.output);
 
+    return musicDataJson;
 });
 
 app.listen(8080, () => console.log('Server started on port 8080'));
